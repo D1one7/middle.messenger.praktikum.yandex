@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../assets/styles/main.scss">
+    <title>Авторизация</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="content">
+        <div class="page-title">Авторизация</div>
+        <form class="form-content">
+            {{> input/input inputType="text" inputName="login" inputPlaceholder="Логин"}}
+            {{> input/input inputType="password" inputName="password" inputPlaceholder="Пароль"}}
+            {{> button/blue buttonLink="../main/index.hbs" buttonText="Войти"}}
+        </form>
+        <div class="form-alternative">
+            <p>Ещё нет аккаунта?</p>
+            <a href="../signup/index.hbs">Зарегистрироваться</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

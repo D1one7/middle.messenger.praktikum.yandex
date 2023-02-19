@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../assets/styles/main.scss">
+    <title>Регистрация</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="content">
+        <div class="page-title">Профиль</div>
+        <div class="profile-avatar">
+            <img src="../../assets/images/avatar.png">
+            <span>Изменить аватар</span>
+        </div>
+        <form class="form-content">
+            {{> input/input inputType="text" inputName="email" inputPlaceholder="Почта"}}
+            {{> input/input inputType="text" inputName="login" inputPlaceholder="Логин"}}
+            {{> input/input inputType="text" inputName="firstname" inputPlaceholder="Имя"}}
+            {{> input/input inputType="text" inputName="lastname" inputPlaceholder="Фамилия"}}
+            {{> input/input inputType="text" inputName="chatname" inputPlaceholder="Имя в чате"}}
+            {{> input/input inputType="text" inputName="phone" inputPlaceholder="Телефон"}}
+            {{> button/grey buttonLink="../main/index.hbs" buttonText="Изменить пароль"}}
+            {{> button/blue buttonLink="../main/index.hbs" buttonText="Сохранить"}}
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
