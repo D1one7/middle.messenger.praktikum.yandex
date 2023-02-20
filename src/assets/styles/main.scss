@@ -1,7 +1,15 @@
+
+$primaryColor: #4D79EC;
+$primaryHover: #3e64c9;
+$greyColor: #f5f5f5;
+$greyHover: #e6e6e6;
+$buttonRadius: 6px;
+
 @import "../../components/button/styles.scss";
 @import "../../components/navigation/styles.scss";
 @import "../../components/field/styles.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 
 * {
   font-family: 'Inter', sans-serif;
@@ -72,14 +80,14 @@ form {
     font-weight: 500;
     font-size: 14px;
     line-height: 27px;
-    color: #4D79EC;
+    color: $primaryColor;
   }
 
   & a:hover {
     font-weight: 500;
     font-size: 14px;
     line-height: 27px;
-    color: #3f68d2;
+    color: $primaryHover;
   }
 }
 
@@ -112,4 +120,9 @@ form {
   & span:hover {
     opacity: 1;
   }
+}
+
+ul,
+ol {
+  list-style: none;
 }

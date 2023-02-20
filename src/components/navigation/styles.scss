@@ -1,5 +1,18 @@
-.navigation {
+.navigation ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
+}
+
+.navigation li {
+  background: $greyColor;
+  color: #949494;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: $buttonRadius;
+}
+
+.navigation li a {
+  color: #949494;
+
 }
