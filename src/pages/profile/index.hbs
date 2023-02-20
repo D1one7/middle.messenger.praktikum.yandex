@@ -10,25 +10,25 @@
 </head>
 <body>
 
-<div class="wrapper">
+<main>
     <div class="content">
-        <div class="page-title">Профиль</div>
+        <h1 class="page-title">Профиль</h1>
         <div class="profile-avatar">
             <img src="../../assets/images/avatar.png">
             <span>Изменить аватар</span>
         </div>
         <form class="form-content">
-            {{> input/input inputType="text" inputName="email" inputPlaceholder="Почта"}}
-            {{> input/input inputType="text" inputName="login" inputPlaceholder="Логин"}}
-            {{> input/input inputType="text" inputName="firstname" inputPlaceholder="Имя"}}
-            {{> input/input inputType="text" inputName="lastname" inputPlaceholder="Фамилия"}}
-            {{> input/input inputType="text" inputName="chatname" inputPlaceholder="Имя в чате"}}
-            {{> input/input inputType="text" inputName="phone" inputPlaceholder="Телефон"}}
+            {{> field/input inputType="text" inputName="email" inputPlaceholder="Почта"}}
+            {{> field/input inputType="text" inputName="login" inputPlaceholder="Логин"}}
+            {{> field/input inputType="text" inputName="firstname" inputPlaceholder="Имя"}}
+            {{> field/input inputType="text" inputName="lastname" inputPlaceholder="Фамилия"}}
+            {{> field/input inputType="text" inputName="chatname" inputPlaceholder="Имя в чате"}}
+            {{> field/input inputType="text" inputName="phone" inputPlaceholder="Телефон"}}
             {{> button/grey buttonLink="../main/index.hbs" buttonText="Изменить пароль"}}
             {{> button/blue buttonLink="../main/index.hbs" buttonText="Сохранить"}}
         </form>
     </div>
-</div>
+</main>
 
 </body>
 </html>

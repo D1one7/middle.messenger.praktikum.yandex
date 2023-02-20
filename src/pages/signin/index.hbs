@@ -10,12 +10,12 @@
 </head>
 <body>
 
-<div class="wrapper">
+<main>
     <div class="content">
-        <div class="page-title">Авторизация</div>
+        <h1 class="page-title">Авторизация</h1>
         <form class="form-content">
-            {{> input/input inputType="text" inputName="login" inputPlaceholder="Логин"}}
-            {{> input/input inputType="password" inputName="password" inputPlaceholder="Пароль"}}
+            {{> field/input inputType="text" inputName="login" inputPlaceholder="Логин"}}
+            {{> field/input inputType="password" inputName="password" inputPlaceholder="Пароль"}}
             {{> button/blue buttonLink="../main/index.hbs" buttonText="Войти"}}
         </form>
         <div class="form-alternative">
@@ -23,7 +23,7 @@
             <a href="../signup/index.hbs">Зарегистрироваться</a>
         </div>
     </div>
-</div>
+</main>
 
 </body>
 </html>
