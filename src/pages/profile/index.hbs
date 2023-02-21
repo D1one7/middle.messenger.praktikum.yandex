@@ -1,0 +1,23 @@
+{{> header pageTitle="Профиль"}}
+
+<main>
+    <div class="content">
+        <h1 class="page-title">Профиль</h1>
+        <div class="profile-avatar">
+            <img src="../../assets/images/avatar.png">
+            <span>Изменить аватар</span>
+        </div>
+        <form class="form-content">
+            {{> field/input inputType="text" inputName="email" inputPlaceholder="Почта"}}
+            {{> field/input inputType="text" inputName="login" inputPlaceholder="Логин"}}
+            {{> field/input inputType="text" inputName="first_name" inputPlaceholder="Имя"}}
+            {{> field/input inputType="text" inputName="second_name" inputPlaceholder="Фамилия"}}
+            {{> field/input inputType="text" inputName="display_name" inputPlaceholder="Имя в чате"}}
+            {{> field/input inputType="text" inputName="phone" inputPlaceholder="Телефон"}}
+            {{> button/grey buttonLink="../main/index.hbs" buttonText="Изменить пароль"}}
+            {{> button/blue buttonLink="../main/index.hbs" buttonText="Сохранить"}}
+        </form>
+    </div>
+</main>
+
+{{> footer}}

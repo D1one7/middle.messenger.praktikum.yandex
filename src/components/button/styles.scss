@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  background: $primaryColor;
+  border-radius: $buttonRadius;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 230px;
+  justify-content: center;
+  width: fit-content;
+  color: #ffffff;
+  border: none;
+  transition: .3s;
+  text-decoration: none;
+  &:hover {
+    background: $primaryHover;
+  }
+  &:active {
+    background: #2e4fa8;
+    transform: scale(0.99);
+  }
+
+  &-grey {
+    padding: 10px 14px;
+    background: $greyColor;
+    font-weight: 400;
+    color: #949494;
+    &:hover {
+      background: $greyHover;
+    }
+  }
+}

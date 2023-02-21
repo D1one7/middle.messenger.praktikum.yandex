@@ -1,0 +1,16 @@
+.modal {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.95);
+  color: #ffffff;
+  gap: 20px;
+  &-title {
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
