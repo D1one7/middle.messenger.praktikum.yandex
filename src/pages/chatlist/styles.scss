@@ -1,0 +1,279 @@
+.chat {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+
+  &-message {
+    display: flex;
+    box-sizing: border-box;
+    max-width: fit-content;
+    align-self: flex-start;
+    justify-content: start;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    gap: 10px;
+    padding: 10px;
+    color: #333;
+    background: #F0F1F2;
+
+    &_from {
+      background: #4D79EC;
+      color: #FFF;
+      align-self: flex-end;
+    }
+
+    & div:nth-child(2) {
+      opacity: 0.3;
+    }
+  }
+
+  &-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    overflow-y:auto;
+  }
+
+  &-send {
+    display: flex;
+    flex-direction: row;
+    height: 54px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 20px;
+    gap: 15px;
+    border-top: 1px solid #EDEDED;
+
+    & input {
+      display: flex;
+      flex-grow: 1;
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 12px;
+    }
+
+    &_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 28px;
+      height: 28px;
+
+      & svg {
+        width: 100%;
+        height: 100%;
+
+        & path {
+          fill: #4D79EC;
+          transition: 0.3s;
+        }
+      }
+
+      &:hover > svg > path {
+        fill: #345cc4;
+      }
+    }
+
+    &_attach {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+
+      & svg
+      {
+        width: 100%;
+        height: 100%;
+
+        & path {
+          fill: #bdbdbd;
+          transition: 0.3s;
+        }
+      }
+
+      &:hover > svg > path {
+        fill: #868686;
+      }
+    }
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 20px;
+    border-bottom: 1px solid #EDEDED;
+
+    &_actions {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      height: 100%;
+
+      & div > svg > path {
+        transition: 0.3s;
+      }
+
+      & div:hover > svg > path {
+        fill: #3d3d3d;
+      }
+    }
+
+    &_user {
+      display: flex;
+      flex-direction: row;
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        margin-left: 10px;
+
+        & div:nth-child(1) {
+          font-size: 14px;
+          color: #000;
+          font-weight: 600;
+        }
+
+        & div:nth-child(2) {
+          font-size: 12px;
+          color: #828282;
+          font-weight: 500;
+        }
+      }
+
+      &__avatar {
+        display: flex;
+        position: relative;
+        width: 50px;
+        height: 50px;
+
+        & img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+
+        & div {
+          display: flex;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 12px;
+          height: 12px;
+          background: #3FD032;
+          border: 2px solid #FFF;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 330px;
+    height: 100vh;
+    background: #FFF;
+    box-sizing: border-box;
+    border-right: 1px solid #EDEDED;
+    padding: 13px;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: 76px;
+    border-radius: 10px;
+    background: #FFF;
+    transition: 0.3s;
+
+    &:hover {
+      background: #F6F9FF;
+    }
+
+    &_date {
+      display: flex;
+      align-self: flex-start;
+      font-size: 10px;
+      font-weight: 500;
+      color: #999;
+    }
+
+    &_avatar {
+      display: flex;
+      position: relative;
+      width: 50px;
+      height: 50px;
+
+      & img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      & div {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 12px;
+        height: 12px;
+        background: #3FD032;
+        border: 2px solid #FFF;
+        border-radius: 50%;
+      }
+    }
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      flex-grow: 1;
+
+      & div:nth-child(1) {
+        display: flex;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #000;
+      }
+
+      & div:nth-child(2) {
+        display: flex;
+        max-width: 197px;
+        max-height: 30px;
+        overflow: hidden;
+        font-size: 12px;
+        font-weight: 400;
+        color: #828282;
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: #FFF;
+  }
+}

@@ -1,18 +1,9 @@
-{{> header pageTitle="Главная страница"}}
-
 <main>
     <div class="content">
         <nav class="navigation">
             <ul>
-                {{> navigation/link linkText="Ошибка 404" linkHref="../404/index.hbs"}}
-                {{> navigation/link linkText="Ошибка 500" linkHref="../500/index.hbs"}}
-                {{> navigation/link linkText="Регистрация" linkHref="../signup/index.hbs"}}
-                {{> navigation/link linkText="Авторизация" linkHref="../signin/index.hbs"}}
-                {{> navigation/link linkText="Профиль" linkHref="../profile/index.hbs"}}
-                {{> navigation/link linkText="Чаты (заглушка)" linkHref="../chatlist/index.hbs"}}
+                {{{navList}}}
             </ul>
         </nav>
     </div>
 </main>
-
-{{> footer}}
