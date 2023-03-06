@@ -11,7 +11,7 @@ export default class internalPage extends Block {
             events: {
                 click: setPage('main')
             }
-        });
+        })
     }
 
     protected render() {
